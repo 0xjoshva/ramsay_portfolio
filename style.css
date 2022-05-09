@@ -1,0 +1,136 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+button {
+  border: none !important;
+}
+#logo {
+  width: 120px;
+  height: 60px;
+  color: white;
+}
+
+a {
+  color: white !important;
+  font-size: x-small;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+.disabled {
+  text-decoration: none !important;
+  color: rgb(155, 155, 155) !important;
+}
+
+.lnk-cont {
+  margin-left: -200px;
+}
+
+/* HOME */
+ #home {
+  background-image: url(assets/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100% !important;
+} 
+
+h1 {
+  color: white !important;;
+  font-family: Montserrat !important;;
+  letter-spacing: -7px !important;
+}
+
+h1 span{
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.socials{
+    float: right;
+    letter-spacing: 40px !important;
+    position: sticky;
+}
+
+.socials a:hover{
+    color:rgb(91, 91, 91) !important;
+}
+
+.socials i{
+    font-size: 20px;
+}
+
+.king-img {
+  width: auto;
+  height: 700px;
+  float: right;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+
+/* STRENGTHS */
+#strengths i{
+    /* color: rgb(85,85,85); */
+     font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
+
+.strength-container{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background: red;
+}
+
+.strength-items{
+row-gap: 200px !important;
+}
+
+#strength-item1{
+    background-color: aqua;
+}
+
+#strength-item2{
+    background-color: aqua;
+}
+
+#strength-item3{
+    background-color: aqua;
+}
