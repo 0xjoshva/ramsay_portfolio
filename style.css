@@ -39,45 +39,47 @@ a:hover {
 }
 
 /* HOME */
- #home {
-  background-image: url(assets/background2.jpg);
+#home {
+  background-image: url(assets/background5.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100% !important;
-} 
+}
 
 h1 {
-  color: white !important;;
-  font-family: Montserrat !important;;
+  color: white !important;
+  font-family: Montserrat !important;
   letter-spacing: -7px !important;
 }
 
-h1 span{
-    background: -webkit-linear-gradient(#eee, #333);
+h1,
+h2 span {
+  background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.socials{
-    float: right;
-    letter-spacing: 40px !important;
-    position: sticky;
+.socials {
+  float: right;
+  letter-spacing: 40px !important;
+  position: sticky;
 }
 
-.socials a:hover{
-    color:rgb(91, 91, 91) !important;
+.socials a:hover {
+  color: rgb(91, 91, 91) !important;
 }
 
-.socials i{
-    font-size: 20px;
+.socials i {
+  font-size: 20px;
 }
 
 .king-img {
   width: auto;
-  height: 700px;
+  height: 500px;
   float: right;
+  margin: ;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 
@@ -99,38 +101,46 @@ h1 span{
   }
 }
 
-
 /* STRENGTHS */
-#strengths i{
-    /* color: rgb(85,85,85); */
-     font-size: 72px;
+#strengths {
+  background-color: rgb(44, 44, 44);
+}
+
+#strengths i {
+  /* color: rgb(85,85,85); */
+  font-size: 72px;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    
+}
+#strengths h2 {
+  font-family: Montserrat !important;
+  display: flex;
+  align-self: flex-start;
 }
 
-.strength-container{
-   width: 100%;
-   height: auto;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   background: red;
+.strength-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background: red; */
 }
 
-.strength-items{
-row-gap: 200px !important;
+.strength-items {
+  row-gap: 50px !important;
+  width: 25%;
 }
 
-#strength-item1{
-    background-color: aqua;
+#strength-item1 {
+  /* background-color: aqua; */
 }
 
-#strength-item2{
-    background-color: aqua;
+#strength-item2 {
+  /* background-color: aqua; */
 }
 
-#strength-item3{
-    background-color: aqua;
+#strength-item3 {
+  /* background-color: aqua; */
 }
