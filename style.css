@@ -87,7 +87,9 @@ a:hover {
 .socials i {
   font-size: 20px;
 }
-
+#skills .row {
+  overflow-x: hidden;
+}
 .king-img {
   width: auto;
   height: 500px;
@@ -179,7 +181,17 @@ a:hover {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
   opacity: 0.5;
-} 
+  backdrop-filter: brightness(200%);
+}
+
+.about-panel-heading {
+}
+
+.about-institution {
+}
+
+.about-course {
+}
 
 hr {
   border-top: 1px solid rgb(255, 255, 255) !important;
@@ -195,19 +207,23 @@ hr {
   top: 0px;
   left: 0px;
   width: 100% !important;
-  height: 100vh !important;
+  /* height: 100vh !important; */
   background-size: cover;
   color: white;
+  height: fit-content;
 }
 
 #leaves-img {
   height: 45rem !important;
   width: 40% !important;
-
+  height: 100vh !important;
+  filter: brightness(50%);
+  overflow-y: hidden !important;
   animation-name: blowing;
   animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  scroll-behavior: smooth;
 }
 
 @keyframes blowing {
@@ -220,6 +236,11 @@ hr {
   100% {
     transform: translate(0, -0px);
   }
+}
+
+progress {
+  width: 500px !important;
+  height: 40px !important;
 }
 
 progress::-webkit-progress-value {
@@ -236,15 +257,42 @@ progress::-webkit-progress-value {
 progress::-webkit-progress-bar {
   background: rgba(255, 255, 255, 0.05);
 }
+.progbar {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.9428;
+  text-transform: none;
+  color: rgb(255, 255, 255);
+  max-width: 500px !important;
+}
 
 .skills-content {
   width: 40%;
+  margin-left: 10%;
+  margin-top: 7% !important;
+  font-weight: 400;
+  height: 60%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(208, 208, 213, 0.497);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.skills-content h2 {
+  font-weight: 500;
 }
 
 /* PORTFOLIO */
 #portfolio {
   background-color: black;
-  background-image: url(assets/starbucks.jpg);
+  background-image: url(assets/starbucks.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -275,7 +323,7 @@ progress::-webkit-progress-bar {
   opacity: 1;
   text-decoration: line-through;
   text-decoration-thickness: 1px;
-  animation: strike 2s linear;
+  animation: strike 0.6s linear;
   animation-name: strike;
 }
 
@@ -293,31 +341,30 @@ progress::-webkit-progress-bar {
 }
 
 #portfolio hr {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .git-link {
-    position: relative;
-    width: 200px;
-    z-index: 10;
+  position: relative;
+  width: 200px;
+  z-index: 10;
 }
 
-.git-link a{
-  font-family: "Montserrat",Sans-serif;
+.git-link a {
+  font-family: "Montserrat", Sans-serif;
   font-size: medium;
   padding-left: 10px;
   font-weight: 300;
   text-decoration: none;
-  
 }
 
-#portfolio a:hover{
+#portfolio a:hover {
   text-decoration: none !important;
   color: inherit;
 }
 
-#starbucks a:hover{
+#starbucks a:hover {
   background-image: url(assets/starbucks.jpg) no-repeat;
   background-position: inherit;
   background-repeat: inherit;
@@ -326,29 +373,47 @@ progress::-webkit-progress-bar {
   width: inherit;
 }
 
-#calculator a:hover{
+#calculator a:hover {
   background-image: url(assets/wildlife2.jpg) no-repeat;
-    background-position: inherit;
+  background-position: inherit;
   background-repeat: inherit;
   background-size: inherit;
   height: inherit;
   width: inherit;
 }
 
-#spacex a:hover{
+#spacex a:hover {
   background-image: url(assets/spacex.jpg) no-repeat;
-    background-position: inherit;
+  background-position: inherit;
   background-repeat: inherit;
   background-size: inherit;
   height: inherit;
   width: inherit;
 }
 
-#greece a:hover{
+#greece a:hover {
   background-image: url(assets/greece.jpg) no-repeat;
-    background-position: inherit;
+  background-position: inherit;
   background-repeat: inherit;
   background-size: inherit;
   height: inherit;
   width: inherit;
+}
+
+/* TESTIMONIALS */
+
+/* CONTACT */
+#contact {
+  background-color: black;
+  background-image: url(assets/map_big.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100% !important;
+  backdrop-filter: blur(2px);
+}
+
+#contact-info:hover {
+  text-decoration: none;
 }
