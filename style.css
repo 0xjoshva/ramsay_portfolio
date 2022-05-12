@@ -203,11 +203,13 @@ hr {
 
 /* SKILLS */
 #skills {
-  background-image: url(assets/wildlife3.jpg);
+  background-image: url(assets/wildlifesketch.jpg);
   top: 0px;
   left: 0px;
   width: 100% !important;
   /* height: 100vh !important; */
+  background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
   background-size: cover;
   color: white;
   height: fit-content;
