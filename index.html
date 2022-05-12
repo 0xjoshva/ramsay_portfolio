@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joshua - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,6 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap"
       rel="stylesheet"
     />
+    <link href="http://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+                
+                
   </head>
   <body>
     <section id="home" class="container-fluid">
@@ -31,7 +36,7 @@
           <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
       </div>
-      <nav class="navbar navbar-dark sticky-top overflow-hidden">
+      <nav class="navbar navbar-dark fixed-top overflow-hidden">
         <div class="container-fluid">
           <img src="assets/logo-white.png" alt="logo" id="logo" />
 
@@ -58,7 +63,7 @@
       </nav>
       <div class="row">
         <h1 class="display-2 text-white">
-          <span>Hello,</span> I'm <br />Joshua
+          JOSHUA<br />STEED
         </h1>
 
         <img
@@ -77,49 +82,44 @@
       </div> -->
     </section>
 
-    <section id="strengths">
-      <h2 id="spec-head" class="text-white pt-5 pb-3">
-        <span class="pr-1">My</span> specialization
+    <section id="strengths" class="strength-container1">
+     
+      <h2 id="spec-head" class="text-white pt-5 pb-3">SPECIALIZATION
       </h2>
 
       <div class="strength-container">
         <div id="strength-item1" class="strength-items">
-          <i class="bi bi-code-square mb-5"></i>
-          <h5 class="text-white">PROGRAMMING</h5>
+          <i class="bi bi-file-code-fill mb-5"></i>
+          <h5 class="text-black">PROGRAMMING</h5> 
           <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quis,
-            impedit assumenda nulla maiores repudiandae corporis iste, vitae
-            temporibus accusantium deserunt, in quia non nostrum.
+            Designing and building software programs, integrating systems and software, training end-users, analyzing algorithms, modifying source-code, writing system instructions, debugging, and maintaining operating systems.
           </p>
         </div>
 
         <div id="strength-item2" class="strength-items">
-          <i class="bi bi-mask"></i>
-          <h5 class="text-white">GRAPHICS & DESIGN</h5>
+          <i class="bi bi-layers-fill"></i>
+          <h5 class="text-black">GRAPHICS & DESIGN</h5>
           <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quis,
-            impedit assumenda nulla maiores repudiandae corporis iste, vitae
-            temporibus accusantium deserunt, in quia non nostrum.
+            Using design software applications to create captivating images, graphics, web pages or logos. Collaborating with clients to determine their goals, style guides or branding guidelines for graphic designers to reference when creating their designs.
           </p>
         </div>
 
         <div id="strength-item3" class="strength-items">
-          <i class="bi bi-bar-chart"></i>
-          <h5 class="text-white">DATA ANALYSIS</h5>
+          <i class="bi bi-bar-chart-line-fill"></i>
+          <h5 class="text-black">ECONOMICS</h5>
           <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quis,
-            impedit assumenda nulla maiores repudiandae corporis iste, vitae
-            temporibus accusantium deserunt, in quia non nostrum.
+            Ability to review data, observe patterns, and draw logical conclusions. For example, some economists analyze historical employment trends to make future projections.
           </p>
         </div>
       </div>
+    <div class="wave"></div>
 </section>
 <section id="about" class="">
       <div class="about-container row justify-content-center">
         <div class="about-item mr-5 mt-5 mb-5">
-          <h2 class="about-panel-heading">Education</h2>
+          <h2 class="about-panel-heading">EDUCATION</h2>
           <!-- course -->
-          <h6 class="about-course">Matric</h6>
+          <h6 class="about-course">ACADEMY COURSE</h6>
           <!-- institution -->
           <p class="fst-italic about-institution">Cape Academy</p>
           <!-- year -->
@@ -132,7 +132,7 @@
           </p>
           <hr />
           <!-- course -->
-          <h6>Matric</h6>
+          <h6 class="about-course">ACADEMY COURSE</h6>
           <!-- institution -->
           <p class="fst-italic about-institution">Cape Academy</p>
           <!-- year -->
@@ -145,10 +145,9 @@
           </p>
         </div>
         <div class="about-item mt-5" id="exp-item">
-          <h2 class="about-panel-heading">
-Experience</h2>
+          <h2 class="about-panel-heading">EXPERIENCE</h2>
           <!-- course -->
-          <h6>Matric</h6>
+          <h6 class="about-course">ACADEMY COURSE</h6>
           <!-- institution -->
           <p class="fst-italic about-institution">Cape Academy</p>
           <!-- year -->
@@ -161,7 +160,7 @@ Experience</h2>
           </p>
           <hr />
           <!-- course -->
-          <h6>Matric</h6>
+          <h6 class="about-course">ACADEMY COURSE</h6>
           <!-- institution -->
           <p class="fst-italic about-institution">Cape Academy</p>
           <!-- year -->
@@ -174,21 +173,22 @@ Experience</h2>
           </p>
         </div>
       </div>
+      <div class="about-padding"></div>
     </section>
 
 <section id="skills">
+  <div id="particles-js">
       <div class="row">
-        
-        <img
+        <!-- <img
           src="assets/leavessketch.png"
           alt="leaves"
           id="leaves-img"
           class="img-fluid overflow-hidden"
-        />
+        /> -->
 
         <div class="skills-content">
-          <h2 class="display-3"> Mastery</h2>
-          <p class="text-muted">
+          <h2 class="display-3"> MASTERY</h2>
+          <p class="text-dark skills-desciption-panel">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
             deserunt accusamus saepe odit debitis. Quam laboriosam ea possimus.
           </p>
@@ -216,6 +216,7 @@ Experience</h2>
           </div>
         </div>
         <!-- <h2 class="display-2" style="transform: rotate(90deg); float: right;">GROWTH</h2> -->
+      </div>
       </div>
     </section>
 
@@ -273,6 +274,53 @@ Experience</h2>
         </div>
       </div>
 </section>
+
+<section id="testimonials">
+  <div class="tweet d-flex justify-content-center">
+    <div class="row">
+    <!-- tweet content -->
+    <img
+    src="assets/user.jpg" 
+    alt="avatar" 
+    class="avatar"
+    >
+
+    <div class="twitter-header">Raaid Abdullatief <span class="text-muted">@user12322380</span><span class="pl-1">May 4</span>
+    <p>
+      Hi, lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex libero similique?
+    </p>
+  </div>
+  </div>
+
+  <div class="row">
+    
+    <!-- comment -->
+    <div class="row">
+      <i class="bi bi-chat"></i>
+      <p>20</p>
+    </div>
+  
+    <!-- retweet -->
+    <div class="row">
+      <i class="bi bi-recycle"></i>
+      <p>404</p>
+    </div>
+
+    <!-- like -->
+    <div class="row">
+      <i class="bi bi-heart"></i>
+      <p>2.7K</p>
+    </div>
+
+    <!-- share -->
+    <div class="row">
+      <i class="bi bi-box-arrow-up"></i>
+    </div>
+
+  </div>
+
+
+</section>
     
 <section id="contact">
   <div class="row">
@@ -282,8 +330,7 @@ Experience</h2>
    
     <a href="mailto:joshuasteed123@gmail.com" class="display-5 contact-info">joshuasteed123@gmail.com</a>
     <a href="#" class="display-5 contact-info">+27 72 829 2341</a></div>
-  
-    
+
     <form action="https://formspree.io/f/xbjwpked" method="post">
      <div class="col">
       <div class="row">
@@ -303,10 +350,19 @@ Experience</h2>
       <textarea placeholder="Message" id="message" name="Message" rows="4" cols="50" maxlength="200"></textarea>  
       <!-- submit btn -->
       </div>
-      <button type="button" class="submitbutton" style>Submit</button>
+      <button type="button" class="submitbutton" style>Submit
+      </button>
     </form>
     </div>
-  </div>
+    
 </section>
-  </body>
+
+  <!-- particles.js -->
+    <script src="./jquery.min.js"></script>
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+    <script src="./particlesjs-config.json"></script>
+</body>
 </html>
+
+

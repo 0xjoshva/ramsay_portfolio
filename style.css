@@ -44,8 +44,14 @@ a:hover {
 
 /* HOME */
 #home {
-  background-color: black;
-  background-image: url(assets/background5.png);
+  /* background-image: url(assets/background5.png); */
+  background: rgb(51, 190, 100);
+  background: linear-gradient(
+    180deg,
+    rgba(51, 190, 100, 1) 0%,
+    rgba(105, 196, 137, 1) 48%,
+    rgba(255, 255, 255, 1) 100%
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,17 +61,16 @@ a:hover {
 
 #home h1 {
   color: white !important;
-  font-family: Montserrat !important;
+  font-family: "Monument Extended", sans-serif;
   font-weight: 600;
-  letter-spacing: -4px !important;
   margin-left: 13% !important;
   margin-top: 14% !important;
 }
 
 #home h1 span {
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 40px !important;
+  -webkit-text-stroke: 2px #000000;
+  opacity: 0.1;
 }
 
 #home h2 span {
@@ -87,9 +92,7 @@ a:hover {
 .socials i {
   font-size: 20px;
 }
-#skills .row {
-  overflow-x: hidden;
-}
+
 .king-img {
   width: auto;
   height: 500px;
@@ -117,8 +120,53 @@ a:hover {
 }
 
 /* STRENGTHS */
+.strength-container1 {
+  position: relative;
+  background: #ffffff;
+  height: auto;
+}
+
+.wave {
+  position: absolute;
+  height: 64px;
+  width: 100%;
+  background: #ffffff;
+  bottom: 0;
+}
+
+.wave::before,
+.wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 100%;
+  background-color: #ffffff;
+  right: -1.5%;
+  top: 40%;
+}
+.wave::after {
+  width: 55%;
+  height: 109%;
+  background: rgb(68, 68, 68);
+  background: linear-gradient(
+    180deg,
+    rgba(68, 68, 68, 1) 0%,
+    rgba(40, 153, 80, 1) 0%,
+    rgba(34, 171, 82, 1) 23%,
+    rgba(29, 185, 84, 1) 47%
+  );
+  left: -1.5%;
+  top: 60%;
+}
+
 #strengths {
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
+  background: rgb(255, 255, 255);
   top: 0px;
   left: 0px;
   width: auto;
@@ -128,13 +176,13 @@ a:hover {
 #strengths i {
   /* color: rgb(85,85,85); */
   font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #000000;
 }
 #strengths h2 {
-  font-family: Montserrat !important;
+  font-family: "Monument Extended", sans-serif;
+  font-weight: 800;
   padding-left: 6%;
+  color: #000000 !important;
 }
 
 .strength-container {
@@ -149,15 +197,24 @@ a:hover {
 .strength-items {
   width: 25%;
   height: auto;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
 }
 
 /* ABOUT */
 #about {
-  background-image: url(assets/flare.jpg);
+  background: rgb(68, 68, 68);
+  background: linear-gradient(
+    0deg,
+    rgba(68, 68, 68, 1) 0%,
+    rgba(29, 185, 84, 1) 100%
+  );
+
+  /* background-image: url(assets/flare.jpg); */
   top: 0px;
   left: 0px;
   width: auto;
-  height: 100vh;
+  height: fit-content;
   background-size: cover;
   color: white;
 }
@@ -185,12 +242,34 @@ a:hover {
 }
 
 .about-panel-heading {
+  font-weight: 700;
+  font-family: "Monument Extended", sans-serif;
 }
 
 .about-institution {
+  font-family: "Gotham", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.about-date {
+  font-family: "Gotham", sans-serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .about-course {
+  font-family: "Gotham Black", sans-serif;
+  font-weight: 500;
+}
+
+.about-paragraph {
+  font-family: "Gotham", sans-serif;
+  font-weight: 300;
+}
+
+.about-padding {
+  padding-bottom: 5% !important;
 }
 
 hr {
@@ -202,17 +281,43 @@ hr {
 }
 
 /* SKILLS */
+
 #skills {
-  background-image: url(assets/wildlifesketch.jpg);
+  /* background-image: url(assets/wildlife3_greyscale.jpg);  */
+  /* background-image: url(assets/wildlifesketchgradient.jpg); */
+  background-color: #444444;
   top: 0px;
   left: 0px;
   width: 100% !important;
-  /* height: 100vh !important; */
-  background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
+  height: 100vh !important;
+  background-repeat: no-repeat;
   background-size: cover;
   color: white;
   height: fit-content;
+}
+
+#skills .row {
+  overflow-x: hidden;
+}
+
+.skills-content {
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 7% !important;
+  font-weight: 400;
+  height: 60%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Gotham", sans-serif;
+}
+
+.skills-content h2 {
+  font-weight: 500;
+  font-family: "Monument Extended", sans-serif;
+}
+
+.skills-desciption-panel {
+  background-color: white;
 }
 
 #leaves-img {
@@ -270,25 +375,16 @@ progress::-webkit-progress-bar {
   max-width: 500px !important;
 }
 
-.skills-content {
-  width: 40%;
-  margin-left: 10%;
-  margin-top: 7% !important;
-  font-weight: 400;
-  height: 60%;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  background: rgba(255, 255, 255, 0);
-  box-shadow: 0 8px 32px 0 rgba(208, 208, 213, 0.497);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+canvas {
+  display: block;
+  display-block: vertical-align;
 }
 
-.skills-content h2 {
-  font-weight: 500;
+#particles-js {
+  position: absolute;
+  overflow:hidden;
+  width: 100%;
+  height: 100%;
 }
 
 /* PORTFOLIO */
@@ -403,6 +499,27 @@ progress::-webkit-progress-bar {
 }
 
 /* TESTIMONIALS */
+#testimonials {
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100% !important;
+}
+
+.tweet {
+  background: #f7fbff;
+  height: fit-content;
+  width: 600px;
+  height: 335px;
+}
+
+.tweet img {
+  width: 48px;
+  height: auto;
+  border-radius: 50%;
+}
 
 /* CONTACT */
 #contact {
