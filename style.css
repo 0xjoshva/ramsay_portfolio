@@ -1,3 +1,4 @@
+/* fonts */
 @import url('http://fonts.cdnfonts.com/css/monument-extended');
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
@@ -21,8 +22,8 @@ button {
   border: none !important;
 }
 #logo {
-  width: 120px;
-  height: 60px;
+  width: auto;
+  height: 50px;
   color: white;
 }
 
@@ -58,7 +59,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   width: 100% !important;
 }
 
@@ -123,10 +124,47 @@ a:hover {
 }
 
 /* STRENGTHS */
+#strengths {
+  /* background-color: rgb(0, 0, 0); */
+  background: rgb(255, 255, 255);
+  top: 0px;
+  left: 0px;
+  width: auto;
+  height: 60vh;
+}
+
+#strengths i {
+  /* color: rgb(85,85,85); */
+  font-size: 72px;
+  color: #000000;
+}
+#strengths h2 {
+  font-family: "Monument Extended", sans-serif;
+  font-weight: 800;
+  padding-left: 6%;
+  color: #000000 !important;
+}
+
 .strength-container1 {
   position: relative;
   background: #ffffff;
   height: auto;
+}
+
+.strength-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background: red; */
+}
+
+.strength-items {
+  width: 25%;
+  height: auto;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
 }
 
 .wave {
@@ -152,58 +190,15 @@ a:hover {
   right: -1.5%;
   top: 40%;
 }
+
 .wave::after {
   width: 55%;
   height: 109%;
   background: rgb(68, 68, 68);
-  background: linear-gradient(
-    180deg,
-    rgba(68, 68, 68, 1) 0%,
-    rgba(40, 153, 80, 1) 0%,
-    rgba(34, 171, 82, 1) 23%,
-    rgba(29, 185, 84, 1) 47%
-  );
+  background: linear-gradient( 180deg, rgba(68, 68, 68, 1) 0%, rgba(40, 153, 80, 1) 0%, rgba(34, 171, 82, 1) 23%, rgb(33 181 85) 47% );
   left: -1.5%;
   top: 60%;
 }
-
-#strengths {
-  /* background-color: rgb(0, 0, 0); */
-  background: rgb(255, 255, 255);
-  top: 0px;
-  left: 0px;
-  width: auto;
-  height: 100vh;
-}
-
-#strengths i {
-  /* color: rgb(85,85,85); */
-  font-size: 72px;
-  color: #000000;
-}
-#strengths h2 {
-  font-family: "Monument Extended", sans-serif;
-  font-weight: 800;
-  padding-left: 6%;
-  color: #000000 !important;
-}
-
-.strength-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  /* background: red; */
-}
-
-.strength-items {
-  width: 25%;
-  height: auto;
-  font-family: "Gotham", sans-serif;
-  font-weight: 700;
-}
-
 /* ABOUT */
 #about {
   background: rgb(68, 68, 68);
@@ -392,8 +387,7 @@ canvas {
 
 /* PORTFOLIO */
 #portfolio {
-  background-color: black;
-  background-image: url(assets/starbucks.png);
+  background-color: #444444;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -402,14 +396,14 @@ canvas {
 }
 
 #portfolio h2 {
-  color: white !important;
-  font-family: Montserrat;
-  font-size: 3.371rem;
-  font-weight: 600;
-  line-height: 1.166;
-  opacity: 0.5;
+  font-weight: 500;
+    font-family: "Monument Extended", sans-serif;
+    margin-left: 10%;
 }
 
+
+
+/*
 #portfolio h2 span {
   font-family: Poppins;
   font-size: 1rem;
@@ -444,7 +438,7 @@ canvas {
 #portfolio hr {
   position: relative;
   z-index: 1;
-}
+} */
 
 .git-link {
   position: relative;
@@ -460,12 +454,12 @@ canvas {
   text-decoration: none;
 }
 
-#portfolio a:hover {
+/* #portfolio a:hover {
   text-decoration: none !important;
   color: inherit;
-}
+} */
 
-#starbucks a:hover {
+/* #starbucks a:hover {
   background-image: url(assets/starbucks.jpg) no-repeat;
   background-position: inherit;
   background-repeat: inherit;
@@ -499,11 +493,11 @@ canvas {
   background-size: inherit;
   height: inherit;
   width: inherit;
-}
+} */
 
 /* TESTIMONIALS */
 #testimonials {
-  background-color: #ffffff;
+  background-color: #2b2b2b;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -511,11 +505,66 @@ canvas {
   width: 100% !important;
 }
 
+#testimonials h2{
+  font-family: "Monument Extended", sans-serif;
+  font-weight: 500;
+}
+
+#testimonials hr {
+  position: relative;
+  z-index: 1;
+  border: 1px solid #1DA1F2;
+}
+
+.comment:hover{
+  /* blue */
+  color: #1DA1F2;
+  backdrop-filter: opacity(5%);
+  background-color: #1DA1F2;
+  border-radius: 50%;
+}
+
+.retweet:hover{
+  /* green */
+  color: #19cf86;
+  backdrop-filter: opacity(5%);
+  background-color: #19cf86;
+  border-radius: 50%;
+}
+
+.like:hover{
+  /* red */
+  color: rgb(255, 0, 64);;
+  backdrop-filter: opacity(5%);
+  background-color: rgb(255, 0, 64);
+  border-radius: 50%;
+}
+
+.share{
+}
+
+.share:hover{
+  /* blue */
+  color: #1DA1F2;
+  backdrop-filter: opacity(5%);
+  background-color: #1DA1F2;
+  border-radius: 50%;
+  padding-left: -10px;
+}
+
+.git-link {
+  position: relative;
+  width: 200px;
+  z-index: 10;
+}
+
+/* font-family: 'Arimo', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
 .tweet {
   background: #f7fbff;
   height: fit-content;
-  width: 600px;
-  height: 335px;
+  width: 500px;
+  height: fit-content;
 }
 
 .tweet img {
@@ -524,18 +573,189 @@ canvas {
   border-radius: 50%;
 }
 
-/* CONTACT */
-#contact {
-  background-color: black;
-  background-image: url(assets/map_big.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100% !important;
-  backdrop-filter: blur(2px);
+.tweet-icons{
+  height: 20px;
+  width: 20px;
 }
 
-#contact-info:hover {
+.avatar{
+  border-radius:100px;
+  width:48px;
+  height: auto;
+  margin-right: 15px;
+  max-width: 100%;
+}
+
+.tweet {
+  max-width:490px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius:3px;
+  padding: 30px;
+  border-bottom: 1px solid #e6ecf0;
+  border-top: 1px solid #e6ecf0;
+}
+
+.tweet-header {
+  display: flex;
+  align-items:flex-start;
+  font-size:14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+}
+.tweet-header-info {
+  font-weight:bold;
+}
+.tweet-header-info span {
+  color:#657786;
+  font-weight:normal;
+  margin-left: 5px;
+}
+.tweet-header-info p {
+  font-weight:normal;
+  margin-top: 5px;
+}
+
+/* CONTACT */ /* CONTACT */ /* CONTACT */
+#contact {
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  color: #45505b;
+  margin: 5% 0 3% 0;
+}
+
+.flex-contact {
+  /* background-color: red; */
+  margin: 5% 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.location h4 {
+  /* background-color: aqua; */
+  font-family: "Raleway", sans-serif;
+  width: fit-content;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 2%;
+  color: #45505b;
+}
+
+.email h4 {
+  /* background-color: purple; */
+  font-family: "Raleway", sans-serif;
+  width: fit-content;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 2%;
+  color: #45505b;
+}
+
+.phone h4 {
+  /* background-color: peru; */
+  font-family: "Raleway", sans-serif;
+  width: fit-content;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 2%;
+  color: #45505b;
+}
+
+.location p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+
+.email p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+
+.phone p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+
+#contact-ico {
+  font-size: 120%;
+  color: #0563bb;
+  background-color: rgb(222, 234, 239);
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-input {
+  margin-left: 25%;
+  margin-top: -25%;
+  margin-right: 20%;
+}
+
+.flex-item {
+}
+
+#name1 input {
+  width: 180%;
+  height: 44px;
+}
+
+#email1 input {
+  width: 200%;
+  height: 44px;
+  margin-bottom: 7%;
+  margin-left: 167px;
+}
+
+#subject1 input {
+  width: 125%;
+  height: initial;
+  margin-bottom: 3%;
+  height: 44px;
+}
+
+#message1 input {
+  width: 125%;
+  height: initial;
+  margin-bottom: 3%;
+  padding-bottom: 20%;
+}
+
+.row-container {
+  display: inline-flex;
+}
+
+.submitbutton {
+  background-color: #0563bb;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 33px;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+.submitbutton:hover {
+  background-color: rgb(70, 122, 194);
+  /* color: #0563bb; */
+  border: 1px solid #0563bb;
 }
