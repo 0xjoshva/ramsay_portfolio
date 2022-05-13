@@ -2,6 +2,7 @@
 @import url("http://fonts.cdnfonts.com/css/monument-extended");
 @import url("http://fonts.cdnfonts.com/css/gotham");
 
+
 /* CSS RESET */
 * {
   margin: 0;
@@ -12,6 +13,11 @@
   vertical-align: baseline;
   scroll-behavior: smooth;
 }
+
+ a, a:hover, a:focus, a:active {
+  text-decoration: none !important;
+  color: inherit;
+ }
 
 /* NAVBAR */
 nav {
@@ -141,7 +147,7 @@ a:hover {
 }
 #strengths h2 {
   font-family: "Monument Extended", sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   padding-left: 6%;
   color: #000000 !important;
 }
@@ -226,6 +232,7 @@ a:hover {
 
 .about-container {
   width: 100% !important;
+  column-gap: 50px;
 }
 
 .about-item {
@@ -247,7 +254,7 @@ a:hover {
 }
 
 .about-panel-heading {
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Monument Extended", sans-serif;
 }
 
@@ -457,7 +464,6 @@ canvas {
 .git-link a {
   font-family: "Montserrat", Sans-serif;
   font-size: medium;
-  padding-left: 10px;
   font-weight: 300;
   text-decoration: none;
 }
@@ -504,12 +510,14 @@ canvas {
 
 /* TESTIMONIALS */
 #testimonials {
-  background-color: #2b2b2b;
+  background: rgb(43,43,43);
+background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(32,32,32,1) 50%, rgba(25,25,25,1) 65%, rgba(17,17,17,1) 80%, rgba(0,0,0,1) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: fit-content;
   width: 100% !important;
+  padding-bottom: 5%;
 }
 
 #testimonials h2 {
@@ -524,39 +532,23 @@ canvas {
 }
 
 .comment:hover {
-  /* blue */
   color: #1da1f2;
-  backdrop-filter: opacity(5%);
-  background-color: #1da1f2;
-  border-radius: 50%;
 }
 
 .retweet:hover {
-  /* green */
   color: #19cf86;
-  backdrop-filter: opacity(5%);
-  background-color: #19cf86;
-  border-radius: 50%;
 }
 
 .like:hover {
-  /* red */
-  color: rgb(255, 0, 64);
-  backdrop-filter: opacity(5%);
-  background-color: rgb(255, 0, 64);
-  border-radius: 50%;
+  color: rgb(255, 0, 64)
 }
 
 .share {
+  color: grey;
 }
 
 .share:hover {
-  /* blue */
   color: #1da1f2;
-  backdrop-filter: opacity(5%);
-  background-color: #1da1f2;
-  border-radius: 50%;
-  padding-left: -10px;
 }
 
 .git-link {
@@ -583,6 +575,7 @@ canvas {
 .tweet-icons {
   height: 20px;
   width: 20px;
+  font-weight: 700;
 }
 
 .avatar1 {
@@ -626,143 +619,24 @@ canvas {
 
 /* CONTACT */ /* CONTACT */ /* CONTACT */
 #contact {
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  
 }
 
 #contact h2 {
+  font-weight: 500;
+  font-family: "Monument Extended", sans-serif;
   text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  color: #45505b;
-  margin: 5% 0 3% 0;
+  padding: 0 10px;
 }
 
-.flex-contact {
-  /* background-color: red; */
-  margin: 5% 7%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+#contact hr{
+  margin-top:5%;
 }
 
-.location h4 {
-  /* background-color: aqua; */
-  font-family: "Raleway", sans-serif;
-  width: fit-content;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 2%;
-  color: #45505b;
-}
-
-.email h4 {
-  /* background-color: purple; */
-  font-family: "Raleway", sans-serif;
-  width: fit-content;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 2%;
-  color: #45505b;
-}
-
-.phone h4 {
-  /* background-color: peru; */
-  font-family: "Raleway", sans-serif;
-  width: fit-content;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 2%;
-  color: #45505b;
-}
-
-.location p {
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #728394;
-}
-
-.email p {
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #728394;
-}
-
-.phone p {
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #728394;
-}
-
-#contact-ico {
-  font-size: 120%;
-  color: #0563bb;
-  background-color: rgb(222, 234, 239);
-  padding: 20px;
-  border-radius: 50%;
-  border: 1px solid rgb(255, 255, 255);
-  float: left;
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-input {
-  margin-left: 25%;
-  margin-top: -25%;
-  margin-right: 20%;
-}
-
-.flex-item {
-}
-
-#name1 input {
-  width: 20%;
-  height: 44px;
-}
-
-#email1 input {
-  width: 20%;
-  height: 44px;
-  margin-bottom: 7%;
-  margin-left: 167px;
-}
-
-#subject1 input {
-  width: 50%;
-  height: initial;
-  margin-bottom: 3%;
-  height: 44px;
-}
-
-#message1 input {
-  width: 50%;
-  height: initial;
-  margin-bottom: 3%;
-  padding-bottom: 20%;
-}
-
-.row-container {
-  display: inline-flex;
-}
-
-.submitbutton {
-  background-color: #0563bb;
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 10px 33px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-  font-weight: bold;
-}
-
-.submitbutton:hover {
-  background-color: rgb(70, 122, 194);
-  /* color: #0563bb; */
-  border: 1px solid #0563bb;
+.input-grid{
+  background-color: greenyellow;
+  margin-left: 5%;
 }
