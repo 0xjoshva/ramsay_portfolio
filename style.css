@@ -1,7 +1,7 @@
 /* fonts */
 @import url("http://fonts.cdnfonts.com/css/monument-extended");
 @import url("http://fonts.cdnfonts.com/css/gotham");
-
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* CSS RESET */
 * {
@@ -14,10 +14,13 @@
   scroll-behavior: smooth;
 }
 
- a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none !important;
   color: inherit;
- }
+}
 
 /* NAVBAR */
 nav {
@@ -510,8 +513,15 @@ canvas {
 
 /* TESTIMONIALS */
 #testimonials {
-  background: rgb(43,43,43);
-background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(32,32,32,1) 50%, rgba(25,25,25,1) 65%, rgba(17,17,17,1) 80%, rgba(0,0,0,1) 100%);
+  background: rgb(43, 43, 43);
+  background: linear-gradient(
+    180deg,
+    rgba(43, 43, 43, 1) 0%,
+    rgba(32, 32, 32, 1) 50%,
+    rgba(25, 25, 25, 1) 65%,
+    rgba(17, 17, 17, 1) 80%,
+    rgba(0, 0, 0, 1) 100%
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -540,7 +550,7 @@ background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(32,32,32,1) 50%, r
 }
 
 .like:hover {
-  color: rgb(255, 0, 64)
+  color: rgb(255, 0, 64);
 }
 
 .share {
@@ -564,6 +574,7 @@ background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(32,32,32,1) 50%, r
   height: fit-content;
   width: 500px;
   height: fit-content;
+  row-gap: 50px;
 }
 
 .tweet img {
@@ -588,6 +599,7 @@ background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(32,32,32,1) 50%, r
 
 .tweet {
   max-width: 490px;
+  min-height: 290px;
   background: #fff;
   margin: 0 auto;
   margin-top: 50px;
@@ -596,15 +608,17 @@ background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(32,32,32,1) 50%, r
   border-bottom: 1px solid #e6ecf0;
   border-top: 1px solid #e6ecf0;
 }
-
-.tweet-header {
+.tweet-display {
   display: flex;
-  align-items: flex-start;
-  font-size: 14px !important;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.twitter-header {
   font-family: "Open Sans", sans-serif !important;
   font-weight: 400 !important;
 }
-.tweet-header-info {
+.twitter-header-info {
   font-weight: bold;
 }
 .tweet-header-info span {
@@ -617,12 +631,33 @@ background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(32,32,32,1) 50%, r
   margin-top: 5px;
 }
 
+.bi-patch-check-fill{
+  color:#1da1f2;
+}
+
+.display-name{
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.username{
+  font-weight: lighter;
+}
+
+.day-date{
+  font-weight: lighter;
+}
+
+.tweet-p{
+font-weight:500;
+font-family: 'Arimo', sans-serif;
+}
+
 /* CONTACT */ /* CONTACT */ /* CONTACT */
 #contact {
   background: rgb(0, 0, 0);
   height: 100vh;
   width: 100%;
-  
 }
 
 #contact h2 {
@@ -632,11 +667,11 @@ background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(32,32,32,1) 50%, r
   padding: 0 10px;
 }
 
-#contact hr{
-  margin-top:5%;
+#contact hr {
+  margin-top: 5%;
 }
 
-.input-grid{
+.input-grid {
   background-color: greenyellow;
   margin-left: 5%;
 }
