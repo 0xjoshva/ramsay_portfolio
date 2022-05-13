@@ -1,6 +1,6 @@
 /* fonts */
-@import url('http://fonts.cdnfonts.com/css/monument-extended');
-@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url("http://fonts.cdnfonts.com/css/monument-extended");
+@import url("http://fonts.cdnfonts.com/css/gotham");
 
 /* CSS RESET */
 * {
@@ -196,7 +196,13 @@ a:hover {
   width: 55%;
   height: 109%;
   background: rgb(68, 68, 68);
-  background: linear-gradient( 180deg, rgba(68, 68, 68, 1) 0%, rgba(40, 153, 80, 1) 0%, rgba(34, 171, 82, 1) 23%, rgb(33 181 85) 47% );
+  background: linear-gradient(
+    180deg,
+    rgba(68, 68, 68, 1) 0%,
+    rgba(40, 153, 80, 1) 0%,
+    rgba(34, 171, 82, 1) 23%,
+    rgb(33 181 85) 47%
+  );
   left: -1.5%;
   top: 60%;
 }
@@ -381,14 +387,19 @@ canvas {
 
 #particles-js {
   position: absolute;
-  overflow:hidden;
+  overflow: hidden;
   width: 100%;
   height: 100%;
 }
 
 /* PORTFOLIO */
 #portfolio {
-  background-color: #444444;
+  background: rgb(68, 68, 68);
+  background: linear-gradient(
+    180deg,
+    rgba(68, 68, 68, 1) 0%,
+    rgba(43, 43, 43, 1) 90%
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,13 +409,10 @@ canvas {
 
 #portfolio h2 {
   font-weight: 500;
-    font-family: "Monument Extended", sans-serif;
-    margin-left: 10%;
+  font-family: "Monument Extended", sans-serif;
+  margin-left: 10%;
 }
 
-
-
-/*
 #portfolio h2 span {
   font-family: Poppins;
   font-size: 1rem;
@@ -439,9 +447,8 @@ canvas {
 #portfolio hr {
   position: relative;
   z-index: 1;
-} */
-
-.git-link {
+}
+*/ .git-link {
   position: relative;
   width: 200px;
   z-index: 10;
@@ -455,12 +462,11 @@ canvas {
   text-decoration: none;
 }
 
-/* #portfolio a:hover {
+#portfolio a:hover {
   text-decoration: none !important;
   color: inherit;
-} */
-
-/* #starbucks a:hover {
+}
+*/ #starbucks a:hover {
   background-image: url(assets/starbucks.jpg) no-repeat;
   background-position: inherit;
   background-repeat: inherit;
@@ -494,7 +500,7 @@ canvas {
   background-size: inherit;
   height: inherit;
   width: inherit;
-} */
+}
 
 /* TESTIMONIALS */
 #testimonials {
@@ -506,7 +512,7 @@ canvas {
   width: 100% !important;
 }
 
-#testimonials h2{
+#testimonials h2 {
   font-family: "Monument Extended", sans-serif;
   font-weight: 500;
 }
@@ -514,18 +520,18 @@ canvas {
 #testimonials hr {
   position: relative;
   z-index: 1;
-  border: 1px solid #1DA1F2;
+  border: 1px solid #1da1f2;
 }
 
-.comment:hover{
+.comment:hover {
   /* blue */
-  color: #1DA1F2;
+  color: #1da1f2;
   backdrop-filter: opacity(5%);
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
   border-radius: 50%;
 }
 
-.retweet:hover{
+.retweet:hover {
   /* green */
   color: #19cf86;
   backdrop-filter: opacity(5%);
@@ -533,22 +539,22 @@ canvas {
   border-radius: 50%;
 }
 
-.like:hover{
+.like:hover {
   /* red */
-  color: rgb(255, 0, 64);;
+  color: rgb(255, 0, 64);
   backdrop-filter: opacity(5%);
   background-color: rgb(255, 0, 64);
   border-radius: 50%;
 }
 
-.share{
+.share {
 }
 
-.share:hover{
+.share:hover {
   /* blue */
-  color: #1DA1F2;
+  color: #1da1f2;
   backdrop-filter: opacity(5%);
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
   border-radius: 50%;
   padding-left: -10px;
 }
@@ -574,25 +580,25 @@ canvas {
   border-radius: 50%;
 }
 
-.tweet-icons{
+.tweet-icons {
   height: 20px;
   width: 20px;
 }
 
-.avatar{
-  border-radius:100px;
-  width:48px;
+.avatar1 {
+  border-radius: 100px;
+  width: 48px;
   height: auto;
   margin-right: 15px;
   max-width: 100%;
 }
 
 .tweet {
-  max-width:490px;
+  max-width: 490px;
   background: #fff;
   margin: 0 auto;
   margin-top: 50px;
-  border-radius:3px;
+  border-radius: 3px;
   padding: 30px;
   border-bottom: 1px solid #e6ecf0;
   border-top: 1px solid #e6ecf0;
@@ -600,21 +606,21 @@ canvas {
 
 .tweet-header {
   display: flex;
-  align-items:flex-start;
-  font-size:14px !important;
-  font-family: 'Open Sans', sans-serif !important;
+  align-items: flex-start;
+  font-size: 14px !important;
+  font-family: "Open Sans", sans-serif !important;
   font-weight: 400 !important;
 }
 .tweet-header-info {
-  font-weight:bold;
+  font-weight: bold;
 }
 .tweet-header-info span {
-  color:#657786;
-  font-weight:normal;
+  color: #657786;
+  font-weight: normal;
   margin-left: 5px;
 }
 .tweet-header-info p {
-  font-weight:normal;
+  font-weight: normal;
   margin-top: 5px;
 }
 
@@ -712,26 +718,26 @@ canvas {
 }
 
 #name1 input {
-  width: 180%;
+  width: 20%;
   height: 44px;
 }
 
 #email1 input {
-  width: 200%;
+  width: 20%;
   height: 44px;
   margin-bottom: 7%;
   margin-left: 167px;
 }
 
 #subject1 input {
-  width: 125%;
+  width: 50%;
   height: initial;
   margin-bottom: 3%;
   height: 44px;
 }
 
 #message1 input {
-  width: 125%;
+  width: 50%;
   height: initial;
   margin-bottom: 3%;
   padding-bottom: 20%;
