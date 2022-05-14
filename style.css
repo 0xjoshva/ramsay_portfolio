@@ -1,7 +1,7 @@
 /* fonts */
 @import url("http://fonts.cdnfonts.com/css/monument-extended");
 @import url("http://fonts.cdnfonts.com/css/gotham");
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 /* CSS RESET */
 * {
@@ -27,28 +27,27 @@ nav {
   overflow-y: auto;
 }
 
-#offcanvasNavbar{
-  background: rgba( 0, 0, 0, 0.15 );
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
+#offcanvasNavbar {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
-.btn-close button{
+.btn-close button {
   color: white !important;
-
 }
 
-.nav-item i{
-padding-right: 10px;
+.nav-item i {
+  padding-right: 10px;
 }
 
-.nav-item a{
-font-size: 20px !important;
+.nav-item a {
+  font-size: 20px !important;
   font-family: "Gotham", sans-serif;
   font-weight: lighter;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
   text-decoration: none !important;
 }
 
@@ -656,28 +655,28 @@ canvas {
   margin-top: 5px;
 }
 
-.bi-patch-check-fill{
-  color:#1da1f2;
+.bi-patch-check-fill {
+  color: #1da1f2;
 }
 
-.display-name{
+.display-name {
   font-weight: bolder;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.username{
+.username {
   font-weight: lighter;
 }
 
-.day-date{
+.day-date {
   font-weight: lighter;
 }
-.bullet{
-font-size: small;
+.bullet {
+  font-size: small;
 }
-.tweet-p{
-font-weight:500;
-font-family: 'Arimo', sans-serif;
+.tweet-p {
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
 }
 
 /* CONTACT */ /* CONTACT */ /* CONTACT */
@@ -694,40 +693,39 @@ font-family: 'Arimo', sans-serif;
   text-align: center;
 }
 
-.input-grid{
+.input-grid {
   width: 50%;
   display: flex;
   flex-direction: column;
   margin-left: 38%;
 }
 
-input{
+input {
   box-shadow: 10px 5px 5px #444444;
   margin-bottom: 20px !important;
 }
 
-#name{
-  width: 50%;
-    border: 2px solid #ccc;
-  border-radius: 4px;
-}
-
-#email{
-  width: 50%;
-    border: 2px solid #ccc;
-  border-radius: 4px;
-  
-}
-
-#subject{
+#name {
   width: 50%;
   border: 2px solid #ccc;
   border-radius: 4px;
 }
 
-#message{
-  width:50%;
-  height:30%;
+#email {
+  width: 50%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#subject {
+  width: 50%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#message {
+  width: 50%;
+  height: 30%;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -736,15 +734,40 @@ input{
   resize: none;
 }
 
+.submit-btn {
+  background-color: #19cf86;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 100px !important;
+  font-weight: 700;
+  font-family: "Gotham", sans-serif;
+  font-size: small;
+  margin-top: 10px !important;
+  margin-left: 20%;
+}
 
-textarea{
+.submit-btn:hover {
+  opacity: 1;
+}
+
+textarea {
   box-shadow: 10px 5px 5px #444444;
 }
-footer{
+footer {
   background-color: #19cf86;
 }
 
-footer a{
+footer a {
   font-size: 30px;
   letter-spacing: 30px;
 }
