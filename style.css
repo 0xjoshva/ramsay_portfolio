@@ -701,7 +701,7 @@ canvas {
 }
 
 input {
-  box-shadow: 10px 5px 5px #444444;
+  box-shadow: 10px 5px 10px #444444;
   margin-bottom: 20px !important;
 }
 
@@ -761,7 +761,7 @@ input {
 }
 
 textarea {
-  box-shadow: 10px 5px 5px #444444;
+  box-shadow: 10px 5px 10px #444444;
 }
 footer {
   background-color: #19cf86;
