@@ -165,7 +165,7 @@ a:hover {
   top: 0px;
   left: 0px;
   width: auto;
-  height: 60vh;
+  height: fit-content;
 }
 
 #strengths i {
@@ -596,9 +596,10 @@ canvas {
 .tweet {
   background: #f7fbff;
   height: fit-content;
-  width: 500px;
+  min-width: 500px;
   height: fit-content;
   row-gap: 50px;
+
 }
 
 .tweet img {
@@ -700,6 +701,10 @@ canvas {
   margin-left: 38%;
 }
 
+textarea {
+  box-shadow: 10px 5px 10px #444444;
+}
+
 input {
   box-shadow: 10px 5px 10px #444444;
   margin-bottom: 20px !important;
@@ -760,9 +765,7 @@ input {
   opacity: 1;
 }
 
-textarea {
-  box-shadow: 10px 5px 10px #444444;
-}
+
 footer {
   background-color: #19cf86;
 }
@@ -770,4 +773,53 @@ footer {
 footer a {
   font-size: 30px;
   letter-spacing: 30px;
+}
+
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1080px){
+  #home{
+    height: fit-content;
+  }
+  .homepage-content{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1224px){
+    #about{
+      width: fit-content;
+    }
+  .about-container{
+      display: flex;
+      flex-direction: column;
+      margin-left: 20% !important;
+      min-width: 500px !important;
+    }
+
+    .about-item{
+      min-width: 500px !important;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+.strength-container{
+      display: flex;
+      flex-direction: column;
+      margin-left: 20%;
+    }
+
+    #strength{
+      width: fit-content;
+      height: fit-content;
+    }
+}
+
+
+@media only screen and (max-width: 1131px){
+  .tweet-row{
+    flex-direction: column;
+    row-gap: 50px;
+  }
 }
