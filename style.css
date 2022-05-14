@@ -200,6 +200,7 @@ a:hover {
   height: auto;
   font-family: "Gotham", sans-serif;
   font-weight: 700;
+  min-width: 400px;
 }
 
 .wave {
@@ -811,7 +812,6 @@ footer a {
     }
 
     #strength{
-      width: fit-content;
       height: fit-content;
     }
 }
