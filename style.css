@@ -27,6 +27,31 @@ nav {
   overflow-y: auto;
 }
 
+#offcanvasNavbar{
+  background: rgba( 0, 0, 0, 0.15 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+}
+
+.btn-close button{
+  color: white !important;
+
+}
+
+.nav-item i{
+padding-right: 10px;
+}
+
+.nav-item a{
+font-size: 20px !important;
+  font-family: "Gotham", sans-serif;
+  font-weight: lighter;
+}
+
+.nav-item a:hover{
+  text-decoration: none !important;
+}
+
 button {
   border: none !important;
 }
@@ -111,6 +136,7 @@ a:hover {
   width: auto;
   height: 500px;
   margin-left: 14.5% !important;
+  margin-top: 7% !important;
 
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
@@ -263,7 +289,6 @@ a:hover {
 
 .about-institution {
   font-family: "Gotham", sans-serif;
-  font-style: italic;
   font-weight: 500;
 }
 
@@ -413,7 +438,7 @@ canvas {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   width: 100% !important;
 }
 
@@ -546,7 +571,7 @@ canvas {
 }
 
 .retweet:hover {
-  color: #19cf86;
+  color: #19cf86 !important;
 }
 
 .like:hover {
@@ -610,7 +635,7 @@ canvas {
 }
 .tweet-display {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -647,7 +672,9 @@ canvas {
 .day-date{
   font-weight: lighter;
 }
-
+.bullet{
+font-size: small;
+}
 .tweet-p{
 font-weight:500;
 font-family: 'Arimo', sans-serif;
@@ -656,22 +683,68 @@ font-family: 'Arimo', sans-serif;
 /* CONTACT */ /* CONTACT */ /* CONTACT */
 #contact {
   background: rgb(0, 0, 0);
-  height: 100vh;
+  height: 50vh;
   width: 100%;
 }
 
 #contact h2 {
   font-weight: 500;
   font-family: "Monument Extended", sans-serif;
-  text-align: center;
   padding: 0 10px;
+  text-align: center;
 }
 
-#contact hr {
-  margin-top: 5%;
+.input-grid{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 38%;
 }
 
-.input-grid {
-  background-color: greenyellow;
-  margin-left: 5%;
+input{
+  box-shadow: 10px 5px 5px #444444;
+  margin-bottom: 20px !important;
+}
+
+#name{
+  width: 50%;
+    border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#email{
+  width: 50%;
+    border: 2px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+#subject{
+  width: 50%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#message{
+  width:50%;
+  height:30%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+
+textarea{
+  box-shadow: 10px 5px 5px #444444;
+}
+footer{
+  background-color: #19cf86;
+}
+
+footer a{
+  font-size: 30px;
+  letter-spacing: 30px;
 }
